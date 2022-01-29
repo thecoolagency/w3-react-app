@@ -22,7 +22,7 @@ function App() {
 
       <div>
         <button className="dt" onClick={() => authenticate({ signingMessage: "TCA Authentication" })}>Authenticate</button>
-        <button onClick={() => authenticate({ provider: "walletconnect" })}>Authenticate <span className="dt"> Wallet Connect</span></button>
+        <button onClick={() => authenticate({ provider: "walletconnect", signingMessage: "TCA Authentication" })}>Authenticate <span className="dt"> Wallet Connect</span></button>
       </div>
 
     );
