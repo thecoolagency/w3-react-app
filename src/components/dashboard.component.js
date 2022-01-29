@@ -1,18 +1,21 @@
 import React, { Component } from "react";
 
-const Home = () => {
+import ERC20Balance from "./ERC20Balance.component";
+
+const Dashboard = () => {
+
     return (
 
         <div className="container page">
 
             <div className="text-center">
-                <h1>Home</h1>
+                <h1>Dashboard</h1>
             </div>
 
-            <hr />
+            <ERC20Balance />
 
         </div>
 
     );
 }
-export default Home;
+export default Dashboard;

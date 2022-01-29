@@ -2,12 +2,12 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { useMoralis } from "react-moralis";
 
-import Login from "./authentification/login.component";
+import Dashboard from "./dashboard.component";
 import Home from "./public/home.component";
 import Navbar from "./navbar.component";
 
 const Main = () => {
-  const { authenticate, isAuthenticated, user, logout, isAuthenticating } = useMoralis();
+  const { user } = useMoralis();
 
     return (
 
@@ -15,12 +15,12 @@ const Main = () => {
         
             <Navbar />
             
-            <h1>Welcome {user.get("username")}</h1>
+            <h5>Wallet {user.get("username")}</h5>
 
             <Routes>
 
                 <Route exact path="/" element={<Home />} />
-                <Route exact path="/login/" element={<Login />} />
+                <Route exact path="/dashboard/" element={<Dashboard />} />
 
             </Routes>
 

@@ -1,27 +1,41 @@
+import { useEffect } from "react";
+
 import './styles/theme.css';
 
 import { useMoralis } from "react-moralis";
 import Main from "./components/main.component";
+import LogOut from "./components/authentification/logout.component";
+import NativeBalance from "./components/nativeBalance.component";
 
 function App() {
-  const { authenticate, isAuthenticated, user, logout, isAuthenticating } = useMoralis();
+
+  const { authenticate, isAuthenticated, isAuthenticating, isWeb3Enabled, enableWeb3, isWeb3EnableLoading } = useMoralis();
+
+  useEffect(() => {
+    const connectorId = window.localStorage.getItem("connectorId");
+    if (isAuthenticated && !isWeb3Enabled && !isWeb3EnableLoading)
+      enableWeb3({ provider: connectorId });
+  }, [isAuthenticated, isWeb3Enabled]);
 
   if (!isAuthenticated) {
     return (
+
       <div>
         <button onClick={() => authenticate({ signingMessage: "TCA Authentication" })}>Authenticate</button>
         <button onClick={() => authenticate({ provider: "walletconnect" })}>Authenticate Wallet Connect</button>
       </div>
+
     );
   }
 
   return (
+
     <div>
       <Main />
-      <button onClick={() => logout()} disabled={isAuthenticating}>
-        log out
-      </button>
+      <NativeBalance />
+      <LogOut />
     </div>
+
   );
 }
 
