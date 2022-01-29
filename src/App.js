@@ -21,8 +21,8 @@ function App() {
     return (
 
       <div>
-        <button onClick={() => authenticate({ signingMessage: "TCA Authentication" })}>Authenticate</button>
-        <button onClick={() => authenticate({ provider: "walletconnect" })}>Authenticate Wallet Connect</button>
+        <button className="dt" onClick={() => authenticate({ signingMessage: "TCA Authentication" })}>Authenticate</button>
+        <button onClick={() => authenticate({ provider: "walletconnect" })}>Authenticate <span className="dt"> Wallet Connect</span></button>
       </div>
 
     );
