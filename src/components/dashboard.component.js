@@ -15,7 +15,7 @@ const Dashboard = () => {
 
             <ERC20Balance />
             <SwitchChain />
-
+            
             <hr />
 
         </div>
