@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 
+import NFTBalance from "components/NFTBalance.component";
+
 const Home = () => {
 
     return (
@@ -9,6 +11,8 @@ const Home = () => {
             <div>
                 <h1>Home</h1>
             </div>
+
+            <NFTBalance />
 
             <hr />
 
