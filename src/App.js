@@ -17,6 +17,9 @@ function App() {
       enableWeb3({ provider: connectorId });
   }, [isAuthenticated, isWeb3Enabled]);
 
+  console.log("is web3 enabled: " + isWeb3Enabled);
+  console.log("is authenticated: " + isAuthenticated);
+
   if (!isAuthenticated) {
     return (
 
