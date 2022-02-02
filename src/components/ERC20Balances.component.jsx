@@ -3,22 +3,15 @@ import { useERC20Balances } from "react-moralis";
 function ERC20Balances(props) {
   const { data: assets, isLoading, isFetching, error } = useERC20Balances(props);
 
-  console.log(assets);
-
-if (!assets) return null;
+  // console.log(assets);
 
   if (isLoading)
-    return (
-      <div>IS LOADING ...</div>
-    );
+      return (
+        <div>LOADING ...</div>
+      );
 
-  if (isFetching)
-    return (
-      <div>IS FETCHING ...</div>
-    );
+  if (!assets) return null;
 
-  else
-  
     return (
 
       <div className="list list-tokens">
@@ -40,6 +33,5 @@ if (!assets) return null;
       </div>
       
     );
-
 }
 export default ERC20Balances;

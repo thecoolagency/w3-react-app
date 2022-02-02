@@ -5,19 +5,12 @@ function NFTBalances(props) {
 
   // console.log(assets);
 
-if (!assets) return null;
-
   if (isLoading)
     return (
-      <div>IS LOADING ...</div>
-    );
-  
-  if (isFetching)
-    return (
-      <div>IS FETCHING ...</div>
+      <div>LOADING ...</div>
     );
 
-  else
+  if (!assets) return null;
 
     return (
 
@@ -43,7 +36,6 @@ if (!assets) return null;
       </div>
 
     );
-
 
 }
 export default NFTBalances;
