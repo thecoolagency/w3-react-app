@@ -1,13 +1,18 @@
 # W3 React App
 
+## Tips
+
+Use node v16.x.x to avoid errors instead of node v17+
+
 ## Dependencies
 
 react
 react-dom
+react-router-dom
 react-scripts
-web-vitals
 moralis
 react-moralis
+@walletconnect/web3-provider
 
 ## Available Scripts
 
