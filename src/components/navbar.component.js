@@ -5,12 +5,12 @@ const Navbar = () => {
 
     return (
         
-        <div className="container">
-            <nav>
-                <Link to="/">Home</Link>
-                <Link to="/dashboard">Dashboard</Link>
-            </nav>
-        </div>
+        <nav>
+            <Link to="/">Home</Link>
+            <Link to="/dashboard">Dashboard</Link>
+            <Link to="/my-tokens">Tokens</Link>
+            <Link to="/my-nfts">NFT's</Link>
+        </nav>
 
     );
 }

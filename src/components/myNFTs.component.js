@@ -1,23 +1,21 @@
-import React, { Component } from "react";
+import React from "react";
 
 import NFTBalance from "components/NFTBalance.component";
 
-const Home = () => {
+const MyNFTs = () => {
 
     return (
 
         <div className="container page">
 
-            <div>
-                <h1>Home</h1>
-            </div>
+            <h1>My NFT's</h1>
 
             <NFTBalance />
-
+            
             <hr />
 
         </div>
 
     );
 }
-export default Home;
+export default MyNFTs;

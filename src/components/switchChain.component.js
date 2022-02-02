@@ -1,7 +1,7 @@
 import { useChain } from "react-moralis";
 
 function SwitchChain() {
-  const { switchNetwork, chainId, chain, account } = useChain();
+  const { switchNetwork, chainId } = useChain();
   return (
     <>
       <button onClick={() => switchNetwork("0x1")}>Switch to Ethereum</button>

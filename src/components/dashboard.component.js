@@ -1,6 +1,5 @@
-import React, { Component } from "react";
+import React from "react";
 
-import ERC20Balance from "components/ERC20Balance.component";
 import SwitchChain from "components/switchChain.component";
 
 const Dashboard = () => {
@@ -9,11 +8,8 @@ const Dashboard = () => {
 
         <div className="container page">
 
-            <div>
-                <h1>Dashboard</h1>
-            </div>
+            <h1>Dashboard</h1>
 
-            <ERC20Balance />
             <SwitchChain />
             
             <hr />

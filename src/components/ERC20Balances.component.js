@@ -1,21 +1,23 @@
-import { useMoralis, useERC20Balances } from "react-moralis";
+import { useERC20Balances } from "react-moralis";
 
-function ERC20Balance(props) {
+function ERC20Balances(props) {
   const { data: assets } = useERC20Balances(props);
-  const { Moralis } = useMoralis();
 
-  // console.log(assets);
+  console.log(assets);
 
 if (!assets) return null;
 
   return (
-    <div style={{ width: "65vw", padding: "15px" }}>
+
+    <div className="list list-tokens">
+      <h5>Total tokens: {assets.length}</h5>
       <ul>
         {assets.map(asset => (
           <li key={asset}><span>{asset.name}</span> | <span>{asset.symbol}</span> | <span>{asset.balance}</span> | <span>{asset.token_address}</span></li>
         ))}
       </ul>
     </div>
+    
   );
 }
-export default ERC20Balance;
+export default ERC20Balances;
