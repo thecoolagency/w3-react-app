@@ -3,6 +3,7 @@
 ## Tips
 
 Use node v16.x.x to avoid errors instead of node v17+
+See live version at [TCA.COOL](https://tca.cool/)
 
 ## Dependencies
 
@@ -20,8 +21,8 @@ In the project directory, you can run:
 
 ### `npm start`
 
-Runs the app in the development mode.\
+Runs the app in the development mode.
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder.\
+Builds the app for production to the `build` folder.
