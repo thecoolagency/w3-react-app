@@ -7,6 +7,8 @@ import MyTokens from "components/myTokens.component";
 import MyNFTs from "components/myNFTs.component";
 import Home from "components/home.component";
 import Navbar from "components/navbar.component";
+import NativeBalance from "components/nativeBalance.component";
+import LogOut from "components/authentification/logout.component";
 
 const Main = () => {
   const { user } = useMoralis();
@@ -14,10 +16,22 @@ const Main = () => {
     return (
 
         <Router>
+
+            <div className="header">
         
-            <Navbar />
-            
-            <h5>Wallet {user.get("username")}</h5>
+                <Navbar />
+                
+                <div className="user-info">
+                    
+                    <LogOut />
+
+                    <h5>Wallet {user.get("username")}</h5>
+
+                    <NativeBalance />
+
+                </div>
+
+            </div>
 
             <Routes>
 

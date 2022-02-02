@@ -1,12 +1,8 @@
 import { useEffect } from "react";
 import { useMoralis } from "react-moralis";
 
-import 'styles/theme.css';
-
 import Main from "components/main.component";
 import LoginWallet from "components/authentification/loginWallet.component";
-import LogOut from "components/authentification/logout.component";
-import NativeBalance from "components/nativeBalance.component";
 
 function App() {
 
@@ -31,10 +27,8 @@ function App() {
 
   return (
 
-    <div className="container">
+    <div className="wrapper">
       <Main />
-      <NativeBalance />
-      <LogOut />
     </div>
 
   );

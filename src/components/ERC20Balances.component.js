@@ -13,7 +13,12 @@ if (!assets) return null;
       <h5>Total tokens: {assets.length}</h5>
       <ul>
         {assets.map(asset => (
-          <li key={asset}><span>{asset.name}</span> | <span>{asset.symbol}</span> | <span>{asset.balance}</span> | <span>{asset.token_address}</span></li>
+          <li key={asset}>
+            <span>{asset.name}</span> |&nbsp;
+            <span>{asset.symbol}</span> |&nbsp;
+            <span>{asset.balance}</span> |&nbsp;
+            <span>{asset.token_address}</span>
+          </li>
         ))}
       </ul>
     </div>

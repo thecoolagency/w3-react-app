@@ -5,11 +5,13 @@ const Navbar = () => {
 
     return (
         
-        <nav>
-            <Link to="/">Home</Link>
-            <Link to="/dashboard">Dashboard</Link>
-            <Link to="/my-tokens">Tokens</Link>
-            <Link to="/my-nfts">NFT's</Link>
+        <nav className="navigation">
+            <ul>
+                <li><Link to="/">Home</Link></li>
+                <li><Link to="/dashboard">Dashboard</Link></li>
+                <li><Link to="/my-tokens">Tokens</Link></li>
+                <li><Link to="/my-nfts">NFT's</Link></li>
+            </ul>
         </nav>
 
     );

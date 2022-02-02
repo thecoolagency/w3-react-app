@@ -6,9 +6,7 @@ const LogOut = () => {
 
   return (
 
-    <button onClick={() => logout()} disabled={isAuthenticating}>
-      log out
-    </button>
+    <button className="reset-btn p0" onClick={() => logout()} disabled={isAuthenticating}>log out</button>
     
   );
 }

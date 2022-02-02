@@ -1,0 +1,80 @@
+/* ######################################
+    media queries */
+
+    @media screen and ( min-width: 990px ) {
+
+    }
+
+    @media screen and ( min-width: 750px ) and ( max-width: 989px ) {
+
+    }
+
+    @media screen and ( max-width: 749px ) {
+
+    }
+
+
+/* ######################################
+    layout */
+
+
+
+
+/* ######################################
+    headings */
+
+    h1, h2, h3, h4, h5, h6 {
+        font-size: 1rem;
+        line-height: 1rem;
+    }
+
+    h1 {
+        font-size: 3rem;
+        line-height: 4rem;
+        margin-bottom: 1rem;
+    }
+
+
+/* ######################################
+    header */
+
+    header {
+        
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+        .user-info {
+            display: flex;
+            padding: 5px;
+            column-gap: 10px;
+        }
+
+        .navigation {
+
+        }
+
+            .navigation ul {
+                display: flex;
+                column-gap: 5px;
+            }
+
+            .navigation ul li {
+                padding: 5px;
+            }
+
+
+
+    @media screen and ( max-width: 749px ) {
+        .header {
+            display: block;
+        }
+
+            .user-info {
+                flex-wrap: wrap;
+            }
+
+    }

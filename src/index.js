@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import App from 'App';
 import { MoralisProvider } from "react-moralis";
 import 'styles/base.css';
+import 'styles/theme.css';
 
 const APP_ID = process.env.REACT_APP_MORALIS_APP_ID;
 const SERVER_URL = process.env.REACT_APP_MORALIS_SERVER_URL;
