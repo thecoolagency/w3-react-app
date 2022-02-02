@@ -2,9 +2,9 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { useMoralis } from "react-moralis";
 
-import Dashboard from "./dashboard.component";
-import Home from "./public/home.component";
-import Navbar from "./navbar.component";
+import Dashboard from "components/dashboard.component";
+import Home from "components/public/home.component";
+import Navbar from "components/navbar.component";
 
 const Main = () => {
   const { user } = useMoralis();

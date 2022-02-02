@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
-import ERC20Balance from "./ERC20Balance.component";
-import SwitchChain from "./switchChain.component";
+import ERC20Balance from "components/ERC20Balance.component";
+import SwitchChain from "components/switchChain.component";
 
 const Dashboard = () => {
 

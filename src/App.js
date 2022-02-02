@@ -1,11 +1,11 @@
 import { useEffect } from "react";
 import { useMoralis } from "react-moralis";
 
-import './styles/theme.css';
+import 'styles/theme.css';
 
-import Main from "./components/main.component";
-import LogOut from "./components/authentification/logout.component";
-import NativeBalance from "./components/nativeBalance.component";
+import Main from "components/main.component";
+import LogOut from "components/authentification/logout.component";
+import NativeBalance from "components/nativeBalance.component";
 
 function App() {
 
