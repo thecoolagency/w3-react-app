@@ -2,7 +2,7 @@
 
 ## Tips
 
-Use node v16.x.x to avoid errors instead of node v17+
+Use node v16.x.x to avoid errors instead of node v17+\
 See live version at [TCA.COOL](https://tca.cool/)
 
 ## Dependencies
