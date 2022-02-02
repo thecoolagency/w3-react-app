@@ -1,8 +1,8 @@
 import { useEffect } from "react";
+import { useMoralis } from "react-moralis";
 
 import './styles/theme.css';
 
-import { useMoralis } from "react-moralis";
 import Main from "./components/main.component";
 import LogOut from "./components/authentification/logout.component";
 import NativeBalance from "./components/nativeBalance.component";
@@ -20,7 +20,7 @@ function App() {
   if (!isAuthenticated) {
     return (
 
-      <div>
+      <div className="container">
         <button className="dt" onClick={() => authenticate({ signingMessage: "TCA Authentication" })}>Authenticate</button>
         <button onClick={() => authenticate({ provider: "walletconnect", signingMessage: "TCA Authentication" })}>Authenticate <span className="dt"> Wallet Connect</span></button>
       </div>
@@ -30,7 +30,7 @@ function App() {
 
   return (
 
-    <div>
+    <div className="container">
       <Main />
       <NativeBalance />
       <LogOut />
